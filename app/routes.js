@@ -33,7 +33,7 @@ module.exports = function(app, passport, db) {
         res.redirect('/profile')
       })
     })
-
+//
     app.put('/messages', (req, res) => {
       db.collection('messages')
       .findOneAndUpdate({name: req.body.name, msg: req.body.msg}, {
